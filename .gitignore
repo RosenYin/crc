@@ -1,0 +1,47 @@
+# 目录
+/build
+/temp
+/.vscode
+
+# 忽略生成的可执行文件
+crc
+
+CMakeLists copy.txt
+# 忽略一切.log后缀的文件
+*.log
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.mp4
+.vs
+[CRC校验]手算与直观演示.mp4
