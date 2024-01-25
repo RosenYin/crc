@@ -11,3 +11,11 @@ bilibili:<https://www.bilibili.com/video/BV1V4411Z7VA/?spm_id_from=333.337.searc
 cmake 可以编译为so文件，有一个编译选项设置为"1"为编译为so，"0"就是可执行文件
 
 其中，编译为so文件时，会将头文件一并放入编译路径，与so同路径
+
+如果要加入到其它cmake工程中：
+
+需要在`CMakeLists.txt`文件末尾加入：`add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/crc)`
+
+这里假设crc这个文件夹放到了与外层cmake文件同级的路径
+
+`crc.h`头文件和`libcrc.so`文件会被放到主cmake路径下生成的build内的crc文件夹里
