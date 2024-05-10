@@ -40,6 +40,6 @@ endif()
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-
+set_target_properties(${PROJECT_NAME} PROPERTIES POSITION_INDEPENDENT_CODE ON)
 #add link library
 # target_link_libraries(${FS_BUILD_BINARY_PREFIX}sqrt ${LIBRARIES})
