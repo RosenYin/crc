@@ -10,7 +10,7 @@
 # Copyright (c) 2024 by RosenYin, All Rights Reserved. 
 #/ 
 
-class C_CRC:
+class CrcTool:
     # 8位数据按位翻转
     # 如：0x03(0000 0011) -> 0xC0(1100 0000)
     #       3            ->  192
