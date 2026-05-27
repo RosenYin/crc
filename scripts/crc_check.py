@@ -197,7 +197,7 @@ class CrcTool:
 
 # 测试函数
 def CrcTest():
-    crc = C_CRC()
+    crc = CrcTool()
     data1 = [0x01, 0x06, 0x00, 0x02, 0x00, 0xC4]
     a = crc.CalCRC16(data1, 6, 0x8005, 0xFFFF, 1, 0x0000)
     # 将10进制转换成16进制
